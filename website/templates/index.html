@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block title %}Home{% endblock %}
+{% block content %}
+{{ super () }}
+<p id="test"></p>
+
+<h1>Test App </h1>
+
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Message" aria-label="Message" id="msg">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="sendBtn" name="sendBtn">Send</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'index.js')}}"></script>
+{% endblock %}

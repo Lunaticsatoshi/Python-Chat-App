@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+
+{% block title %}Login{% endblock %}
+
+
+
+
+{% block content %}
+{{ super () }}
+
+
+<div class="container login-container">
+    <div class="row">
+        <div class="col-md-6 login-form-1">
+            <h3>Login To Your Account</h3>
+            <form class="form-inline" method="POST" action="#">
+                <div class="form-group mb-2">
+                    <label for="staticName2" class="sr-only">Name</label>
+                    <input type="text" readonly class="form-control" placeholder="Enter Your First Name" id="staticName2" value="Enter Your Name" />
+                </div>
+                <div class="form-group">
+                    <label for="inputName" class="sr-only">Account Name</label>
+                    <input type="text" class="form-control" name = "inputName" id="inputName" placeholder="Enter a Account Name" value="First Name" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btnSubmit"/>Login</button> </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'index.js')}}"></script>
+{% endblock %}
