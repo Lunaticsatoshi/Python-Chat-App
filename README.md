@@ -1,2 +1,3 @@
 # Python-Chat-App
-A chat app made using Python, socket Programming and Flask 
+A crappy chat app made using Python, socket Programming and Flask 
+Seriously why did I even put it on Github 😕
